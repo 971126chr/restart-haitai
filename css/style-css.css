@@ -9,8 +9,9 @@
 .header {
     width: 798px;
     position: relative;
+    display: inline-block;
 }
-ul.header-list::after {
+ul.header-list::after, ul.nav-list::after {
     display: block;
     content: "";
     clear: both;
@@ -21,7 +22,7 @@ ul.header-list {
     right: 0;
     line-height: 23px;
 }
-ul.header-list li {
+ul.header-list li, ul.nav-list li {
     float: left;
 }
 ul.header-list li a {
@@ -45,5 +46,26 @@ ul.header-list li:last-child::after {
     padding: 3.5px;
     position: absolute;
     top: 10px;
-    right: 0px;
+    right: 2px;
+}
+h1.header-h1 {
+    display: inline-block;
+}
+h1.header-h1 a {
+    padding-top: 33px;
+}
+nav {
+    min-height: 56px;
+    display: inline-block;
+}
+nav .nav-left {
+    background: url("../images/header/org-nav-left.png") no-repeat left center;
+    padding-left: 9px;
+}
+nav .nav-right {
+    background: url("../images/header/org-nav-right.png") no-repeat right center;
+    padding-right: 9px;
+}
+nav .nav-center {
+    background: url("../images/header/org-nav-center.png") repeat-x;
 }
