@@ -57,15 +57,22 @@ h1.header-h1 a {
 nav {
     min-height: 56px;
     display: inline-block;
+    vertical-align: middle;
 }
 nav .nav-left {
     background: url("../images/header/org-nav-left.png") no-repeat left center;
     padding-left: 9px;
+    min-height: 56px;
 }
 nav .nav-right {
     background: url("../images/header/org-nav-right.png") no-repeat right center;
-    padding-right: 9px;
+    padding-right: 5px;
+    min-height: 56px;
 }
 nav .nav-center {
     background: url("../images/header/org-nav-center.png") repeat-x;
+    min-height: 56px;
+}
+ul.nav-list {
+    line-height: 50px;
 }
