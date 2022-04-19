@@ -55,6 +55,8 @@ h1.header-h1 a {
     padding-top: 33px;
 }
 nav {
+    width: 84%;
+    padding-left: 82px;
     min-height: 56px;
     display: inline-block;
     vertical-align: middle;
@@ -75,4 +77,27 @@ nav .nav-center {
 }
 ul.nav-list {
     line-height: 50px;
+    padding-left: 13px;
+}
+ul.nav-list li {
+    text-align: center;
+}
+ul.nav-list li:not(:first-child) {
+    margin-left: 9px;
+}
+ul.nav-list li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 14.5px 39.8px;
+}
+ul.nav-list li a.active, 
+ul.nav-list li a:hover {
+    background: #fff;
+    padding: 7px 25.4px;
+    color: #ff7800;
+    margin-left: 38px;
+}
+ul.nav-list li a.active {
+    margin-left: 0;
 }
