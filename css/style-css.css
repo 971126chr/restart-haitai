@@ -14,7 +14,7 @@
     display: inline-block;
 }
 
-ul.header-list::after, ul.nav-list::after {
+ul.header-list::after, ul.nav-list::after, ul.main-in-bottom-list::after {
     display: block;
     content: "";
     clear: both;
@@ -27,7 +27,7 @@ ul.header-list {
     line-height: 23px;
 }
 
-ul.header-list li, ul.nav-list li {
+ul.header-list li, ul.nav-list li, ul.main-in-bottom-list li {
     float: left;
 }
 
@@ -221,7 +221,7 @@ section {
 }
 
 .main-content {
-    padding: 60px 55px 0 60px;
+    padding: 60px 60px 58px 60px;
 }
 
 h3.main-h3 {
@@ -237,13 +237,139 @@ ul.main-introduce-list {
 }
 
 ul.main-introduce-list li {
+    color: #c8c8c8;
+    font-size: 11px;
     display: inline-block;
+    letter-spacing: -0.5px;
+}
+
+ul.main-introduce-list li.active {
+    color: #f7941e;
+}
+
+ul.main-introduce-list li:not(:last-child) {
+    background: url("../images/&gt.png") no-repeat right center;
+    content: "";
+    padding: 4.5px 16.5px 4.5px 2.5px;
 }
 
 .main-content-top {
     position: relative;
 }
 
-.main-content-btm .mcb-text {
+.main-content-btm p.mcb-text {
     padding: 30px 0 30px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main-in-border {
+    background: url("../images/section-border.png") repeat-x;
+    padding-top: 3px;
+}
+
+.main-in-border-bottom {
+    background: url("../images/section-border-bottom.png") repeat-x bottom;
+    padding-bottom: 2px;
+}
+
+.main-in-border-y {
+    background: url("../images/section-border-y.png") repeat-y;
+    padding: 38px 26px 33px 27px;
+}
+
+.main-in-logo-wrap {
+    display: inline-block;
+    padding: 0 38px 55px 0;
+    border-right: 1px dotted #e5e5e5;
+}
+
+.main-in-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+dl.main-in-introduce {
+    line-height: 17.5px;
+}
+
+dl.main-in-introduce dt, h3.main-in-h3 {
+    font-size: 14px;
+    color: #f7941e;
+    font-weight: bold;
+}
+
+dl.main-in-introduce dd {
+    font-size: 11px;
+    color: #9b9b9b;
+}
+
+.main-in-text dl.main-in-introduce:not(:first-child) {
+    margin-top: 30px;
+}
+
+button.main-in-btn {
+    margin-top: 9px;
+    border: none;
+    padding-bottom: 5px;
+}
+
+button.main-in-btn a {
+    font-size: 0;
+    background: url("../images/org-button.png") no-repeat;
+    padding: 11px 38.5px;
+}
+
+h3.main-in-h3 {
+    margin-top: 30px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #efefef;
+}
+
+ul.main-in-bottom-list {
+    margin-top: 15px;
+}
+
+ul.main-in-bottom-list li {
+    font-size: 0;
+    padding: 25.5px 60.5px;
+}
+
+ul.main-in-bottom-list li:first-child {
+    background: url("../images/box-01.png") no-repeat;
+}
+
+ul.main-in-bottom-list li:nth-child(2) {
+    background: url("../images/box-02.png") no-repeat;
+}
+
+ul.main-in-bottom-list li:nth-child(3) {
+    background: url("../images/box-03.png") no-repeat;
+}
+
+ul.main-in-bottom-list li:nth-child(4) {
+    background: url("../images/box-04.png") no-repeat;
+}
+
+ul.main-in-bottom-list li:last-child {
+    background: url("../images/box-05.png") no-repeat;
+}
+
+ul.main-in-bottom-list li:not(:first-child) {
+    margin-left: 3px;
+}
+
+.main-in-desc {
+    padding: 32px 0 0 31px;
+}
+
+ul.main-in-desc-list li {
+    font-size: 11px;
+    color: #9b9b9b;
+    line-height: 15px;
+}
+
+footer {
+    background: url("../images/index-bg-main.png") no-repeat left;
 }
